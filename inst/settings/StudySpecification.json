@@ -273,7 +273,8 @@
             45893265,
             45893459,
             45893496,
-            45893519
+            45893519,
+            4082382
           ],
           "outcomeIds": [989]
         },
@@ -371,7 +372,8 @@
             45893265,
             45893459,
             45893496,
-            45893519
+            45893519,
+            4082382
           ],
           "outcomeIds": [989]
         },
@@ -469,7 +471,8 @@
             45893265,
             45893459,
             45893496,
-            45893519
+            45893519,
+            4082382
           ],
           "outcomeIds": [989]
         }
@@ -663,7 +666,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 1,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -947,7 +950,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 2,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -1231,7 +1234,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 3,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -1515,7 +1518,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 4,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -1799,7 +1802,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 5,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -2083,7 +2086,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 6,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -2367,7 +2370,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 7,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -2651,7 +2654,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 8,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -2935,7 +2938,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 9,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -3219,7 +3222,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 10,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -3503,7 +3506,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 11,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -3787,7 +3790,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 12,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -4071,7 +4074,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 13,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -4355,7 +4358,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 14,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -4639,7 +4642,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 15,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -4923,7 +4926,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 16,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -5207,7 +5210,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 17,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -5491,7 +5494,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 18,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -5775,7 +5778,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 19,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -6059,7 +6062,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 20,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -6343,7 +6346,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 21,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -6627,7 +6630,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 22,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -6911,7 +6914,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 23,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
@@ -7195,7 +7198,7 @@
           "matchOnPsAndCovariates": false,
           "analysisId": 24,
           "createPsArgs": {
-            "stopOnError": true,
+            "stopOnError": false,
             "excludeCovariateIds": [],
             "prior": {
               "variance": [1],
