@@ -1,85 +1,85 @@
 targetId,comparatorId,outcomeId,outcomeName,type
-992,991,441604,Acute appendicitis without peritonitis,outcome
-992,991,314381,Acute febrile mucocutaneous lymph node syndrome,outcome
-992,991,196735,Acute pyelonephritis without medullary necrosis,outcome
-992,991,76725,Anal fissure,outcome
-992,991,195453,"Colitis, enteritis and gastroenteritis presumed infectious",outcome
-992,991,378001,Concussion with no loss of consciousness,outcome
-992,991,377283,Conjunctival hyperemia,outcome
-992,991,4311591,Cramp in limb,outcome
-992,991,201606,Crohn's disease,outcome
-992,991,435796,Dehydration,outcome
-992,991,201061,Diaphragmatic hernia,outcome
-992,991,376132,Ectropion,outcome
-992,991,374801,Foreign body in ear,outcome
-992,991,73564,Full thickness rotator cuff tear,outcome
-992,991,4218873,Glossopyrosis,outcome
-992,991,4058388,Hypertrophic scar,outcome
-992,991,374375,Impacted cerumen,outcome
-992,991,440053,Infestation by insect,outcome
-992,991,139099,Ingrowing nail,outcome
-992,991,435785,Meningitis,outcome
-992,991,4273714,Miliaria,outcome
-992,991,133169,Myelofibrosis,outcome
-992,991,4267558,Precocious puberty,outcome
-992,991,443172,"Splinter of face, without major open wound",outcome
-992,991,4329707,Strabismus,outcome
-992,991,377575,Tinnitus,outcome
-992,991,440814,Torticollis,outcome
-992,991,4311853,Upper urinary tract infection,outcome
-990,991,441604,Acute appendicitis without peritonitis,outcome
-990,991,314381,Acute febrile mucocutaneous lymph node syndrome,outcome
-990,991,196735,Acute pyelonephritis without medullary necrosis,outcome
-990,991,76725,Anal fissure,outcome
-990,991,195453,"Colitis, enteritis and gastroenteritis presumed infectious",outcome
-990,991,378001,Concussion with no loss of consciousness,outcome
-990,991,377283,Conjunctival hyperemia,outcome
-990,991,4311591,Cramp in limb,outcome
-990,991,201606,Crohn's disease,outcome
-990,991,435796,Dehydration,outcome
-990,991,201061,Diaphragmatic hernia,outcome
-990,991,376132,Ectropion,outcome
-990,991,374801,Foreign body in ear,outcome
-990,991,73564,Full thickness rotator cuff tear,outcome
-990,991,4218873,Glossopyrosis,outcome
-990,991,4058388,Hypertrophic scar,outcome
-990,991,374375,Impacted cerumen,outcome
-990,991,440053,Infestation by insect,outcome
-990,991,139099,Ingrowing nail,outcome
-990,991,435785,Meningitis,outcome
-990,991,4273714,Miliaria,outcome
-990,991,133169,Myelofibrosis,outcome
-990,991,4267558,Precocious puberty,outcome
-990,991,443172,"Splinter of face, without major open wound",outcome
-990,991,4329707,Strabismus,outcome
-990,991,377575,Tinnitus,outcome
-990,991,440814,Torticollis,outcome
-990,991,4311853,Upper urinary tract infection,outcome
-954,991,441604,Acute appendicitis without peritonitis,outcome
-954,991,314381,Acute febrile mucocutaneous lymph node syndrome,outcome
-954,991,196735,Acute pyelonephritis without medullary necrosis,outcome
-954,991,76725,Anal fissure,outcome
-954,991,195453,"Colitis, enteritis and gastroenteritis presumed infectious",outcome
-954,991,378001,Concussion with no loss of consciousness,outcome
-954,991,377283,Conjunctival hyperemia,outcome
-954,991,4311591,Cramp in limb,outcome
-954,991,201606,Crohn's disease,outcome
-954,991,435796,Dehydration,outcome
-954,991,201061,Diaphragmatic hernia,outcome
-954,991,376132,Ectropion,outcome
-954,991,374801,Foreign body in ear,outcome
-954,991,73564,Full thickness rotator cuff tear,outcome
-954,991,4218873,Glossopyrosis,outcome
-954,991,4058388,Hypertrophic scar,outcome
-954,991,374375,Impacted cerumen,outcome
-954,991,440053,Infestation by insect,outcome
-954,991,139099,Ingrowing nail,outcome
-954,991,435785,Meningitis,outcome
-954,991,4273714,Miliaria,outcome
-954,991,133169,Myelofibrosis,outcome
-954,991,4267558,Precocious puberty,outcome
-954,991,443172,"Splinter of face, without major open wound",outcome
-954,991,4329707,Strabismus,outcome
-954,991,377575,Tinnitus,outcome
-954,991,440814,Torticollis,outcome
-954,991,4311853,Upper urinary tract infection,outcome
+1156,1158,441604,Acute appendicitis without peritonitis,outcome
+1156,1158,314381,Acute febrile mucocutaneous lymph node syndrome,outcome
+1156,1158,196735,Acute pyelonephritis without medullary necrosis,outcome
+1156,1158,76725,Anal fissure,outcome
+1156,1158,195453,"Colitis, enteritis and gastroenteritis presumed infectious",outcome
+1156,1158,378001,Concussion with no loss of consciousness,outcome
+1156,1158,377283,Conjunctival hyperemia,outcome
+1156,1158,4311591,Cramp in limb,outcome
+1156,1158,201606,Crohn's disease,outcome
+1156,1158,435796,Dehydration,outcome
+1156,1158,201061,Diaphragmatic hernia,outcome
+1156,1158,376132,Ectropion,outcome
+1156,1158,374801,Foreign body in ear,outcome
+1156,1158,73564,Full thickness rotator cuff tear,outcome
+1156,1158,4218873,Glossopyrosis,outcome
+1156,1158,4058388,Hypertrophic scar,outcome
+1156,1158,374375,Impacted cerumen,outcome
+1156,1158,440053,Infestation by insect,outcome
+1156,1158,139099,Ingrowing nail,outcome
+1156,1158,435785,Meningitis,outcome
+1156,1158,4273714,Miliaria,outcome
+1156,1158,133169,Myelofibrosis,outcome
+1156,1158,4267558,Precocious puberty,outcome
+1156,1158,443172,"Splinter of face, without major open wound",outcome
+1156,1158,4329707,Strabismus,outcome
+1156,1158,377575,Tinnitus,outcome
+1156,1158,440814,Torticollis,outcome
+1156,1158,4311853,Upper urinary tract infection,outcome
+1157,1158,441604,Acute appendicitis without peritonitis,outcome
+1157,1158,314381,Acute febrile mucocutaneous lymph node syndrome,outcome
+1157,1158,196735,Acute pyelonephritis without medullary necrosis,outcome
+1157,1158,76725,Anal fissure,outcome
+1157,1158,195453,"Colitis, enteritis and gastroenteritis presumed infectious",outcome
+1157,1158,378001,Concussion with no loss of consciousness,outcome
+1157,1158,377283,Conjunctival hyperemia,outcome
+1157,1158,4311591,Cramp in limb,outcome
+1157,1158,201606,Crohn's disease,outcome
+1157,1158,435796,Dehydration,outcome
+1157,1158,201061,Diaphragmatic hernia,outcome
+1157,1158,376132,Ectropion,outcome
+1157,1158,374801,Foreign body in ear,outcome
+1157,1158,73564,Full thickness rotator cuff tear,outcome
+1157,1158,4218873,Glossopyrosis,outcome
+1157,1158,4058388,Hypertrophic scar,outcome
+1157,1158,374375,Impacted cerumen,outcome
+1157,1158,440053,Infestation by insect,outcome
+1157,1158,139099,Ingrowing nail,outcome
+1157,1158,435785,Meningitis,outcome
+1157,1158,4273714,Miliaria,outcome
+1157,1158,133169,Myelofibrosis,outcome
+1157,1158,4267558,Precocious puberty,outcome
+1157,1158,443172,"Splinter of face, without major open wound",outcome
+1157,1158,4329707,Strabismus,outcome
+1157,1158,377575,Tinnitus,outcome
+1157,1158,440814,Torticollis,outcome
+1157,1158,4311853,Upper urinary tract infection,outcome
+1155,1158,441604,Acute appendicitis without peritonitis,outcome
+1155,1158,314381,Acute febrile mucocutaneous lymph node syndrome,outcome
+1155,1158,196735,Acute pyelonephritis without medullary necrosis,outcome
+1155,1158,76725,Anal fissure,outcome
+1155,1158,195453,"Colitis, enteritis and gastroenteritis presumed infectious",outcome
+1155,1158,378001,Concussion with no loss of consciousness,outcome
+1155,1158,377283,Conjunctival hyperemia,outcome
+1155,1158,4311591,Cramp in limb,outcome
+1155,1158,201606,Crohn's disease,outcome
+1155,1158,435796,Dehydration,outcome
+1155,1158,201061,Diaphragmatic hernia,outcome
+1155,1158,376132,Ectropion,outcome
+1155,1158,374801,Foreign body in ear,outcome
+1155,1158,73564,Full thickness rotator cuff tear,outcome
+1155,1158,4218873,Glossopyrosis,outcome
+1155,1158,4058388,Hypertrophic scar,outcome
+1155,1158,374375,Impacted cerumen,outcome
+1155,1158,440053,Infestation by insect,outcome
+1155,1158,139099,Ingrowing nail,outcome
+1155,1158,435785,Meningitis,outcome
+1155,1158,4273714,Miliaria,outcome
+1155,1158,133169,Myelofibrosis,outcome
+1155,1158,4267558,Precocious puberty,outcome
+1155,1158,443172,"Splinter of face, without major open wound",outcome
+1155,1158,4329707,Strabismus,outcome
+1155,1158,377575,Tinnitus,outcome
+1155,1158,440814,Torticollis,outcome
+1155,1158,4311853,Upper urinary tract infection,outcome
