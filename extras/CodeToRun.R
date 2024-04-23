@@ -1,4 +1,5 @@
 library(LTRAvsICS)
+library(CohortMethod)
 
 renv::deactivate()
 
@@ -47,3 +48,52 @@ execute(connectionDetails = connectionDetails,
         runAnalyses = TRUE,
         packageResults = TRUE,
         maxCores = maxCores)
+
+
+omr <- readRDS(file.path(outputFolder, "cmOutput", "outcomeModelReference.rds"))
+tcos <- read.csv(system.file("settings", "TcosOfInterest.csv", package = "LTRAvsICS"))
+analysisIdList <- unique(omr$analysisId)
+
+computePreferenceScore <- function (data, unfilteredData = NULL) {
+        
+        if (is.null(unfilteredData)) {
+                proportion <- sum(data$treatment)/nrow(data)
+        }
+        else {
+                proportion <- sum(unfilteredData$treatment)/nrow(unfilteredData)
+        }
+        propensityScore <- data$propensityScore
+        propensityScore[propensityScore > 0.9999999] <- 0.9999999
+        x <- exp(log(propensityScore/(1 - propensityScore)) - log(proportion/(1 - proportion)))
+        data$preferenceScore <- x/(x + 1)
+        return(data)
+}
+
+psResult <- data.frame()
+
+for (i in 1:nrow(tcos)) {
+        target <- tcos$targetId[i]
+        comparator <- tcos$comparatorId[i]
+        outcome <- tcos$outcomeIds[i]
+        
+        for (j in analysisIdList) {
+                
+                psFile <- omr %>% filter(targetId == target & comparatorId == comparator & outcomeId == outcome & analysisId == j)
+                ps <- readRDS(file.path(outputFolder, "cmOutput", psFile$psFile))
+                ps <- computePreferenceScore(ps)
+                auc <- CohortMethod::computePsAuc(ps)
+                equipoise <- mean(ps$preferenceScore >= 0.3 & ps$preferenceScore <= 0.7)
+                
+                temp <- data.frame(targetId = target,
+                                   comparatorId = comparator,
+                                   outcomeId = outcome,
+                                   analysisId = j,
+                                   auc = auc,
+                                   equipoise = equipoise)
+                
+                psResult <- rbind(psResult, temp)
+        }
+        
+}
+
+write.csv(psResult, file.path(outputFolder, "export", "psResult.csv"), row.names = F)
