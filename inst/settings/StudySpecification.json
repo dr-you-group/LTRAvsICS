@@ -180,8 +180,8 @@
     "analysisSpecification": {
       "targetComparatorOutcomes": [
         {
-          "targetId": 1156,
-          "comparatorId": 1158,
+          "targetId": 1205,
+          "comparatorId": 1207,
           "includedCovariateConceptIds": [],
           "excludedCovariateConceptIds": [
             317009,
@@ -282,8 +282,8 @@
           "outcomeIds": [989]
         },
         {
-          "targetId": 1157,
-          "comparatorId": 1158,
+          "targetId": 1206,
+          "comparatorId": 1207,
           "includedCovariateConceptIds": [],
           "excludedCovariateConceptIds": [
             317009,
@@ -384,8 +384,8 @@
           "outcomeIds": [989]
         },
         {
-          "targetId": 1155,
-          "comparatorId": 1158,
+          "targetId": 1204,
+          "comparatorId": 1207,
           "includedCovariateConceptIds": [],
           "excludedCovariateConceptIds": [
             317009,
@@ -8969,46 +8969,6 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 21603356,
-                  "STANDARD_CONCEPT": "C",
-                  "CONCEPT_CODE": "R03DC03",
-                  "VOCABULARY_ID": "ATC",
-                  "CONCEPT_NAME": "montelukast; oral",
-                  "DOMAIN_ID": "Drug",
-                  "STANDARD_CONCEPT_CAPTION": "Classification",
-                  "CONCEPT_CLASS_ID": "ATC 5th",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 1154161,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "88249",
-                  "VOCABULARY_ID": "RxNorm",
-                  "CONCEPT_NAME": "montelukast",
-                  "DOMAIN_ID": "Drug",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Ingredient",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              }
-            ]},
-            "name": "[LTRAvsICS] mon ATC",
-            "id": 4
-          },
-          {
-            "expression": {"items": [
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 260125,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "5505005",
@@ -9043,96 +9003,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 260139,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "10509002",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112521,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195728004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute bronchitis due to rhinovirus",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110483,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195725001",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute coxsackievirus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4110182,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "196052005",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Acute drug-induced interstitial lung disorder",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110485,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195729007",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute echovirus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110023,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195721005",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute haemophilus influenzae bronchitis",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -9162,79 +9037,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4051332,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "233599001",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute mycoplasmal bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112359,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195726000",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute parainfluenza virus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 260434,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "196047000",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Acute radiation pneumonitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110484,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195727009",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute respiratory syncytial virus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112015,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195720006",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute streptococcal bronchitis",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -9451,40 +9258,6 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4236592,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "441256000",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Human Bocavirus present",
-                  "DOMAIN_ID": "Measurement",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4262074,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "441344004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Human parainfluenza virus present",
-                  "DOMAIN_ID": "Measurement",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4310964,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "85469005",
@@ -9519,62 +9292,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 36714388,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "719590007",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Influenza caused by seasonal influenza virus",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4133224,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "278516003",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Lobar pneumonia",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4196712,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "313296004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Mild chronic obstructive pulmonary disease",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4193588,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "313297008",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Moderate chronic obstructive pulmonary disease",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -9924,8 +9646,8 @@
                 "includeDescendants": true
               }
             ]},
-            "name": "[LTRAvsICS] acute lower respiratory disease_240422",
-            "id": 5
+            "name": "[LTRAvsICS] acute lower respiratory disease_240429_updated",
+            "id": 4
           }
         ],
         "EndStrategy": {"CustomEra": {
@@ -10096,7 +9818,7 @@
                   "OccurrenceEndDate": null,
                   "CorrelatedCriteria": null,
                   "ConditionTypeExclude": false,
-                  "CodesetId": 5,
+                  "CodesetId": 4,
                   "ProviderSpecialty": null,
                   "Gender": null,
                   "VisitType": null,
@@ -10129,7 +9851,7 @@
             "OccurrenceEndDate": null,
             "CorrelatedCriteria": null,
             "DrugSourceConcept": null,
-            "CodesetId": 4,
+            "CodesetId": 3,
             "DrugTypeExclude": false,
             "Quantity": null,
             "DrugType": null,
@@ -10160,12 +9882,12 @@
       },
       "createdDate": null,
       "createdBy": null,
-      "name": "[LTRA-HIRA] mon ATC user above 4 240422",
+      "name": "[LTRA-HIRA] LTRA ATC user above 4 240501",
       "modifiedDate": null,
       "description": null,
       "expressionType": "SIMPLE_EXPRESSION",
       "modifiedBy": null,
-      "id": 1156
+      "id": 1205
     },
     {
       "expression": {
@@ -11818,96 +11540,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 260139,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "10509002",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112521,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195728004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute bronchitis due to rhinovirus",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110483,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195725001",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute coxsackievirus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4110182,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "196052005",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Acute drug-induced interstitial lung disorder",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110485,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195729007",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute echovirus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110023,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195721005",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute haemophilus influenzae bronchitis",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -11937,79 +11574,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4051332,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "233599001",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute mycoplasmal bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112359,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195726000",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute parainfluenza virus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 260434,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "196047000",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Acute radiation pneumonitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110484,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195727009",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute respiratory syncytial virus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112015,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195720006",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute streptococcal bronchitis",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -12226,40 +11795,6 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4236592,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "441256000",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Human Bocavirus present",
-                  "DOMAIN_ID": "Measurement",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4262074,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "441344004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Human parainfluenza virus present",
-                  "DOMAIN_ID": "Measurement",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4310964,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "85469005",
@@ -12294,62 +11829,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 36714388,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "719590007",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Influenza caused by seasonal influenza virus",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4133224,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "278516003",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Lobar pneumonia",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4196712,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "313296004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Mild chronic obstructive pulmonary disease",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4193588,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "313297008",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Moderate chronic obstructive pulmonary disease",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -12699,7 +12183,7 @@
                 "includeDescendants": true
               }
             ]},
-            "name": "[LTRAvsICS] acute lower respiratory disease_240422",
+            "name": "[LTRAvsICS] acute lower respiratory disease_240429_updated",
             "id": 4
           }
         ],
@@ -12935,12 +12419,12 @@
       },
       "createdDate": null,
       "createdBy": null,
-      "name": "[LTRA-HIRA] ICS ATC user aged above 4 240422",
+      "name": "[LTRA-HIRA] ICS ATC user aged above 4 240501",
       "modifiedDate": null,
       "description": null,
       "expressionType": "SIMPLE_EXPRESSION",
       "modifiedBy": null,
-      "id": 1158
+      "id": 1207
     },
     {
       "expression": {
@@ -16198,96 +15682,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 260139,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "10509002",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112521,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195728004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute bronchitis due to rhinovirus",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110483,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195725001",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute coxsackievirus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4110182,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "196052005",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Acute drug-induced interstitial lung disorder",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110485,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195729007",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute echovirus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110023,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195721005",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute haemophilus influenzae bronchitis",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -16317,79 +15716,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4051332,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "233599001",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute mycoplasmal bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112359,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195726000",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute parainfluenza virus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 260434,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "196047000",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Acute radiation pneumonitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110484,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195727009",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute respiratory syncytial virus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112015,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195720006",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute streptococcal bronchitis",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -16606,40 +15937,6 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4236592,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "441256000",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Human Bocavirus present",
-                  "DOMAIN_ID": "Measurement",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4262074,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "441344004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Human parainfluenza virus present",
-                  "DOMAIN_ID": "Measurement",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4310964,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "85469005",
@@ -16674,62 +15971,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 36714388,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "719590007",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Influenza caused by seasonal influenza virus",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4133224,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "278516003",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Lobar pneumonia",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4196712,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "313296004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Mild chronic obstructive pulmonary disease",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4193588,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "313297008",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Moderate chronic obstructive pulmonary disease",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -17079,7 +16325,7 @@
                 "includeDescendants": true
               }
             ]},
-            "name": "[LTRAvsICS] acute lower respiratory disease_240422",
+            "name": "[LTRAvsICS] acute lower respiratory disease_240429_updated",
             "id": 5
           }
         ],
@@ -17315,12 +16561,12 @@
       },
       "createdDate": null,
       "createdBy": null,
-      "name": "[LTRA-HIRA] mon and pran ATC user above 4 240422",
+      "name": "[LTRA-HIRA] mon and pran ATC user above 4 240501",
       "modifiedDate": null,
       "description": null,
       "expressionType": "SIMPLE_EXPRESSION",
       "modifiedBy": null,
-      "id": 1157
+      "id": 1206
     },
     {
       "expression": {
@@ -18939,6 +18185,46 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 21603356,
+                  "STANDARD_CONCEPT": "C",
+                  "CONCEPT_CODE": "R03DC03",
+                  "VOCABULARY_ID": "ATC",
+                  "CONCEPT_NAME": "montelukast; oral",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Classification",
+                  "CONCEPT_CLASS_ID": "ATC 5th",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1154161,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "88249",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "montelukast",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              }
+            ]},
+            "name": "[LTRAvsICS] mon ATC",
+            "id": 4
+          },
+          {
+            "expression": {"items": [
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 260125,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "5505005",
@@ -18973,96 +18259,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 260139,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "10509002",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112521,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195728004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute bronchitis due to rhinovirus",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110483,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195725001",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute coxsackievirus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4110182,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "196052005",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Acute drug-induced interstitial lung disorder",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110485,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195729007",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute echovirus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110023,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195721005",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute haemophilus influenzae bronchitis",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -19092,79 +18293,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4051332,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "233599001",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute mycoplasmal bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112359,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195726000",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute parainfluenza virus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 260434,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "196047000",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Acute radiation pneumonitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4110484,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195727009",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute respiratory syncytial virus bronchitis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112015,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "195720006",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Acute streptococcal bronchitis",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -19381,40 +18514,6 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4236592,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "441256000",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Human Bocavirus present",
-                  "DOMAIN_ID": "Measurement",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4262074,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "441344004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Human parainfluenza virus present",
-                  "DOMAIN_ID": "Measurement",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4310964,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "85469005",
@@ -19449,62 +18548,11 @@
                 "isExcluded": false,
                 "concept": {
                   "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 36714388,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "719590007",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Influenza caused by seasonal influenza virus",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
                   "CONCEPT_ID": 4133224,
                   "STANDARD_CONCEPT": "S",
                   "CONCEPT_CODE": "278516003",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Lobar pneumonia",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4196712,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "313296004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Mild chronic obstructive pulmonary disease",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4193588,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "313297008",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Moderate chronic obstructive pulmonary disease",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -19854,8 +18902,8 @@
                 "includeDescendants": true
               }
             ]},
-            "name": "[LTRAvsICS] acute lower respiratory disease_240422",
-            "id": 4
+            "name": "[LTRAvsICS] acute lower respiratory disease_240429_updated",
+            "id": 6
           }
         ],
         "EndStrategy": {"CustomEra": {
@@ -20026,7 +19074,7 @@
                   "OccurrenceEndDate": null,
                   "CorrelatedCriteria": null,
                   "ConditionTypeExclude": false,
-                  "CodesetId": 4,
+                  "CodesetId": 6,
                   "ProviderSpecialty": null,
                   "Gender": null,
                   "VisitType": null,
@@ -20059,7 +19107,7 @@
             "OccurrenceEndDate": null,
             "CorrelatedCriteria": null,
             "DrugSourceConcept": null,
-            "CodesetId": 3,
+            "CodesetId": 4,
             "DrugTypeExclude": false,
             "Quantity": null,
             "DrugType": null,
@@ -20090,15 +19138,15 @@
       },
       "createdDate": null,
       "createdBy": null,
-      "name": "[LTRA-HIRA] LTRA ATC user above 4 240422",
+      "name": "[LTRA-HIRA] mon ATC user above 4 240501",
       "modifiedDate": null,
       "description": null,
       "expressionType": "SIMPLE_EXPRESSION",
       "modifiedBy": null,
-      "id": 1155
+      "id": 1204
     }
   ],
-  "name": "[LTRA-HIRA] LTRA vs ICS for Neuropsychiatric event 240422",
+  "name": "[LTRA-HIRA] LTRA vs ICS for Neuropsychiatric event 240501",
   "conceptSets": [
     {
       "expression": {"items": [
@@ -22188,594 +21236,594 @@
     }
   ],
   "doPositiveControlSynthesis": false,
-  "id": 146,
+  "id": 150,
   "packageName": "LTRAvsICS",
   "negativeControls": [
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Acute appendicitis without peritonitis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 441604,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Acute febrile mucocutaneous lymph node syndrome",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 314381,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Acute pyelonephritis without medullary necrosis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 196735,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Anal fissure",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 76725,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Colitis, enteritis and gastroenteritis presumed infectious",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 195453,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Concussion with no loss of consciousness",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 378001,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Conjunctival hyperemia",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 377283,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Cramp in limb",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4311591,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Crohn's disease",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 201606,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Dehydration",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 435796,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Diaphragmatic hernia",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 201061,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Ectropion",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 376132,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Foreign body in ear",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 374801,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Full thickness rotator cuff tear",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 73564,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Glossopyrosis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4218873,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Hypertrophic scar",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4058388,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Impacted cerumen",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 374375,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Infestation by insect",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 440053,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Ingrowing nail",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 139099,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Meningitis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 435785,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Miliaria",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4273714,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Myelofibrosis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 133169,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Precocious puberty",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4267558,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Splinter of face, without major open wound",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 443172,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Strabismus",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4329707,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Tinnitus",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 377575,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Torticollis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 440814,
       "type": "outcome"
     },
     {
-      "targetId": 1156,
+      "targetId": 1205,
       "outcomeName": "Upper urinary tract infection",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4311853,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Acute appendicitis without peritonitis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 441604,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Acute febrile mucocutaneous lymph node syndrome",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 314381,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Acute pyelonephritis without medullary necrosis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 196735,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Anal fissure",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 76725,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Colitis, enteritis and gastroenteritis presumed infectious",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 195453,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Concussion with no loss of consciousness",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 378001,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Conjunctival hyperemia",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 377283,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Cramp in limb",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4311591,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Crohn's disease",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 201606,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Dehydration",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 435796,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Diaphragmatic hernia",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 201061,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Ectropion",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 376132,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Foreign body in ear",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 374801,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Full thickness rotator cuff tear",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 73564,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Glossopyrosis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4218873,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Hypertrophic scar",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4058388,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Impacted cerumen",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 374375,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Infestation by insect",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 440053,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Ingrowing nail",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 139099,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Meningitis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 435785,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Miliaria",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4273714,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Myelofibrosis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 133169,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Precocious puberty",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4267558,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Splinter of face, without major open wound",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 443172,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Strabismus",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4329707,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Tinnitus",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 377575,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Torticollis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 440814,
       "type": "outcome"
     },
     {
-      "targetId": 1157,
+      "targetId": 1206,
       "outcomeName": "Upper urinary tract infection",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4311853,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Acute appendicitis without peritonitis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 441604,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Acute febrile mucocutaneous lymph node syndrome",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 314381,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Acute pyelonephritis without medullary necrosis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 196735,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Anal fissure",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 76725,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Colitis, enteritis and gastroenteritis presumed infectious",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 195453,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Concussion with no loss of consciousness",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 378001,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Conjunctival hyperemia",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 377283,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Cramp in limb",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4311591,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Crohn's disease",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 201606,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Dehydration",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 435796,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Diaphragmatic hernia",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 201061,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Ectropion",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 376132,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Foreign body in ear",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 374801,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Full thickness rotator cuff tear",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 73564,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Glossopyrosis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4218873,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Hypertrophic scar",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4058388,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Impacted cerumen",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 374375,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Infestation by insect",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 440053,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Ingrowing nail",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 139099,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Meningitis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 435785,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Miliaria",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4273714,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Myelofibrosis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 133169,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Precocious puberty",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4267558,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Splinter of face, without major open wound",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 443172,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Strabismus",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4329707,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Tinnitus",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 377575,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Torticollis",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 440814,
       "type": "outcome"
     },
     {
-      "targetId": 1155,
+      "targetId": 1204,
       "outcomeName": "Upper urinary tract infection",
-      "comparatorId": 1158,
+      "comparatorId": 1207,
       "outcomeId": 4311853,
       "type": "outcome"
     }

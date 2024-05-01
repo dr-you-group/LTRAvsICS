@@ -40,22 +40,11 @@ UNION  select c.concept_id
 ) C UNION ALL 
 SELECT 4 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (21603356,1154161)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (260125,254058,4110182,4307774,260434,4052544,254677,4112673,257315,40482069,439298,256722,4110056,444084,4049965,252655,260754,4310964,443410,4133224,440431,439857,258785,255848,256723,254066,260430,258180,40482061,253790,4050872,252351,436145,261324,257582,4187218,4209097,259852,261326)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (21603356,1154161)
-  and c.invalid_reason is null
-
-) I
-) C UNION ALL 
-SELECT 5 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
-( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (260125,254058,260139,4112521,4110483,4110182,4110485,4110023,4307774,4051332,4112359,260434,4110484,4112015,4052544,254677,4112673,257315,40482069,439298,256722,4110056,444084,4049965,252655,260754,4236592,4262074,4310964,443410,36714388,4133224,4196712,4193588,440431,439857,258785,255848,256723,254066,260430,258180,40482061,253790,4050872,252351,436145,261324,257582,4187218,4209097,259852,261326)
-UNION  select c.concept_id
-  from @vocabulary_database_schema.CONCEPT c
-  join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (260125,254058,260139,4112521,4110483,4110182,4110485,4110023,4307774,4051332,4112359,260434,4110484,4112015,4052544,254677,4112673,257315,40482069,439298,256722,4110056,444084,4049965,252655,260754,4236592,4262074,4310964,443410,36714388,4133224,4196712,4193588,440431,439857,258785,255848,256723,254066,260430,258180,40482061,253790,4050872,252351,436145,261324,257582,4187218,4209097,259852,261326)
+  and ca.ancestor_concept_id in (260125,254058,4110182,4307774,260434,4052544,254677,4112673,257315,40482069,439298,256722,4110056,444084,4049965,252655,260754,4310964,443410,4133224,440431,439857,258785,255848,256723,254066,260430,258180,40482061,253790,4050872,252351,436145,261324,257582,4187218,4209097,259852,261326)
   and c.invalid_reason is null
 
 ) I
@@ -92,7 +81,7 @@ from
 (
   select de.* 
   FROM @cdm_database_schema.DRUG_EXPOSURE de
-JOIN #Codesets codesets on ((de.drug_concept_id = codesets.concept_id and codesets.codeset_id = 4))
+JOIN #Codesets codesets on ((de.drug_concept_id = codesets.concept_id and codesets.codeset_id = 3))
 ) C
 JOIN @cdm_database_schema.PERSON P on C.person_id = P.person_id
 WHERE (YEAR(C.drug_exposure_start_date) - P.year_of_birth >= 5 and YEAR(C.drug_exposure_start_date) - P.year_of_birth <= 18)
@@ -248,7 +237,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 5))
+  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 4))
 ) C
 
 

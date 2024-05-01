@@ -40,11 +40,11 @@ UNION  select c.concept_id
 ) C UNION ALL 
 SELECT 4 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (260125,254058,260139,4112521,4110483,4110182,4110485,4110023,4307774,4051332,4112359,260434,4110484,4112015,4052544,254677,4112673,257315,40482069,439298,256722,4110056,444084,4049965,252655,260754,4236592,4262074,4310964,443410,36714388,4133224,4196712,4193588,440431,439857,258785,255848,256723,254066,260430,258180,40482061,253790,4050872,252351,436145,261324,257582,4187218,4209097,259852,261326)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (260125,254058,4110182,4307774,260434,4052544,254677,4112673,257315,40482069,439298,256722,4110056,444084,4049965,252655,260754,4310964,443410,4133224,440431,439857,258785,255848,256723,254066,260430,258180,40482061,253790,4050872,252351,436145,261324,257582,4187218,4209097,259852,261326)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (260125,254058,260139,4112521,4110483,4110182,4110485,4110023,4307774,4051332,4112359,260434,4110484,4112015,4052544,254677,4112673,257315,40482069,439298,256722,4110056,444084,4049965,252655,260754,4236592,4262074,4310964,443410,36714388,4133224,4196712,4193588,440431,439857,258785,255848,256723,254066,260430,258180,40482061,253790,4050872,252351,436145,261324,257582,4187218,4209097,259852,261326)
+  and ca.ancestor_concept_id in (260125,254058,4110182,4307774,260434,4052544,254677,4112673,257315,40482069,439298,256722,4110056,444084,4049965,252655,260754,4310964,443410,4133224,440431,439857,258785,255848,256723,254066,260430,258180,40482061,253790,4050872,252351,436145,261324,257582,4187218,4209097,259852,261326)
   and c.invalid_reason is null
 
 ) I
@@ -81,7 +81,7 @@ from
 (
   select de.* 
   FROM @cdm_database_schema.DRUG_EXPOSURE de
-JOIN #Codesets codesets on ((de.drug_concept_id = codesets.concept_id and codesets.codeset_id = 3))
+JOIN #Codesets codesets on ((de.drug_concept_id = codesets.concept_id and codesets.codeset_id = 2))
 ) C
 JOIN @cdm_database_schema.PERSON P on C.person_id = P.person_id
 WHERE (YEAR(C.drug_exposure_start_date) - P.year_of_birth >= 5 and YEAR(C.drug_exposure_start_date) - P.year_of_birth <= 18)
@@ -187,7 +187,7 @@ from
 (
   select de.* 
   FROM @cdm_database_schema.DRUG_EXPOSURE de
-JOIN #Codesets codesets on ((de.drug_concept_id = codesets.concept_id and codesets.codeset_id = 2))
+JOIN #Codesets codesets on ((de.drug_concept_id = codesets.concept_id and codesets.codeset_id = 3))
 ) C
 
 
@@ -307,14 +307,14 @@ FROM (
 	select de.PERSON_ID, DRUG_EXPOSURE_START_DATE, COALESCE(DRUG_EXPOSURE_END_DATE, DATEADD(day,DAYS_SUPPLY,DRUG_EXPOSURE_START_DATE), DATEADD(day,1,DRUG_EXPOSURE_START_DATE)) as DRUG_EXPOSURE_END_DATE 
 	FROM @cdm_database_schema.DRUG_EXPOSURE de
 	JOIN ctePersons p on de.person_id = p.person_id
-	JOIN #Codesets cs on cs.codeset_id = 3 AND de.drug_concept_id = cs.concept_id
+	JOIN #Codesets cs on cs.codeset_id = 2 AND de.drug_concept_id = cs.concept_id
 
 	UNION ALL
 
 	select de.PERSON_ID, DRUG_EXPOSURE_START_DATE, COALESCE(DRUG_EXPOSURE_END_DATE, DATEADD(day,DAYS_SUPPLY,DRUG_EXPOSURE_START_DATE), DATEADD(day,1,DRUG_EXPOSURE_START_DATE)) as DRUG_EXPOSURE_END_DATE 
 	FROM @cdm_database_schema.DRUG_EXPOSURE de
 	JOIN ctePersons p on de.person_id = p.person_id
-	JOIN #Codesets cs on cs.codeset_id = 3 AND de.drug_source_concept_id = cs.concept_id
+	JOIN #Codesets cs on cs.codeset_id = 2 AND de.drug_source_concept_id = cs.concept_id
 ) E
 ;
 
@@ -331,7 +331,7 @@ JOIN
     JOIN 
     (
       --cteEndDates
-      select PERSON_ID, DATEADD(day,-1 * 30,EVENT_DATE) as END_DATE -- unpad the end date by 30
+      select PERSON_ID, DATEADD(day,-1 * 90,EVENT_DATE) as END_DATE -- unpad the end date by 90
       FROM
       (
 				select PERSON_ID, EVENT_DATE, EVENT_TYPE, 
@@ -345,8 +345,8 @@ JOIN
 
 					UNION ALL
 
-					-- add the end dates with NULL as the row number, padding the end dates by 30 to allow a grace period for overlapping ranges.
-					select PERSON_ID, DATEADD(day,30,DRUG_EXPOSURE_END_DATE), 1 as EVENT_TYPE, NULL
+					-- add the end dates with NULL as the row number, padding the end dates by 90 to allow a grace period for overlapping ranges.
+					select PERSON_ID, DATEADD(day,90,DRUG_EXPOSURE_END_DATE), 1 as EVENT_TYPE, NULL
 					FROM #drugTarget D
 				) RAWDATA
       ) E
@@ -386,7 +386,7 @@ from
 (
   select de.* 
   FROM @cdm_database_schema.DRUG_EXPOSURE de
-JOIN #Codesets codesets on ((de.drug_concept_id = codesets.concept_id and codesets.codeset_id = 2))
+JOIN #Codesets codesets on ((de.drug_concept_id = codesets.concept_id and codesets.codeset_id = 3))
 ) C
 
 
