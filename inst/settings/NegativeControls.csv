@@ -17,7 +17,6 @@ targetId,comparatorId,outcomeId,outcomeName,type
 1205,1207,4058388,Hypertrophic scar,outcome
 1205,1207,374375,Impacted cerumen,outcome
 1205,1207,440053,Infestation by insect,outcome
-1205,1207,139099,Ingrowing nail,outcome
 1205,1207,435785,Meningitis,outcome
 1205,1207,4273714,Miliaria,outcome
 1205,1207,133169,Myelofibrosis,outcome
@@ -45,7 +44,6 @@ targetId,comparatorId,outcomeId,outcomeName,type
 1206,1207,4058388,Hypertrophic scar,outcome
 1206,1207,374375,Impacted cerumen,outcome
 1206,1207,440053,Infestation by insect,outcome
-1206,1207,139099,Ingrowing nail,outcome
 1206,1207,435785,Meningitis,outcome
 1206,1207,4273714,Miliaria,outcome
 1206,1207,133169,Myelofibrosis,outcome
@@ -73,7 +71,6 @@ targetId,comparatorId,outcomeId,outcomeName,type
 1204,1207,4058388,Hypertrophic scar,outcome
 1204,1207,374375,Impacted cerumen,outcome
 1204,1207,440053,Infestation by insect,outcome
-1204,1207,139099,Ingrowing nail,outcome
 1204,1207,435785,Meningitis,outcome
 1204,1207,4273714,Miliaria,outcome
 1204,1207,133169,Myelofibrosis,outcome

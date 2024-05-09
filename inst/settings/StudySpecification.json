@@ -19460,23 +19460,6 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 139099,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "400097005",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Ingrowing nail",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": false
-        },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
             "CONCEPT_ID": 435785,
             "STANDARD_CONCEPT": "S",
             "CONCEPT_CODE": "7180009",
@@ -21367,13 +21350,6 @@
     },
     {
       "targetId": 1205,
-      "outcomeName": "Ingrowing nail",
-      "comparatorId": 1207,
-      "outcomeId": 139099,
-      "type": "outcome"
-    },
-    {
-      "targetId": 1205,
       "outcomeName": "Meningitis",
       "comparatorId": 1207,
       "outcomeId": 435785,
@@ -21563,13 +21539,6 @@
     },
     {
       "targetId": 1206,
-      "outcomeName": "Ingrowing nail",
-      "comparatorId": 1207,
-      "outcomeId": 139099,
-      "type": "outcome"
-    },
-    {
-      "targetId": 1206,
       "outcomeName": "Meningitis",
       "comparatorId": 1207,
       "outcomeId": 435785,
@@ -21755,13 +21724,6 @@
       "outcomeName": "Infestation by insect",
       "comparatorId": 1207,
       "outcomeId": 440053,
-      "type": "outcome"
-    },
-    {
-      "targetId": 1204,
-      "outcomeName": "Ingrowing nail",
-      "comparatorId": 1207,
-      "outcomeId": 139099,
       "type": "outcome"
     },
     {
