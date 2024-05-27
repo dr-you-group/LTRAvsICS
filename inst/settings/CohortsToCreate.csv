@@ -1,0 +1,6 @@
+atlasId,atlasName,cohortId,name
+1202,[LTRAvsICS] LTRA ATC user above 4 240501,1202,LTRAvsICS_LTRA_ATC_user_above_4_240501
+1203,[LTRAvsICS] ICS ATC user aged above 4 240501,1203,LTRAvsICS_ICS_ATC_user_aged_above_4_240501
+989,[LTRAvsICS] Neuropsychiatric event v3,989,LTRAvsICS_Neuropsychiatric_event_v3
+1201,[LTRAvsICS] mon ATC user above 4 240501,1201,LTRAvsICS_mon_ATC_user_above_4_240501
+1200,[LTRAvsICS] mon and pran ATC user above 4 240501,1200,LTRAvsICS_mon_and_pran_ATC_user_above_4_240501
