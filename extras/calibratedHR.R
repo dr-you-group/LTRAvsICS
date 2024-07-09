@@ -1,8 +1,7 @@
-.libPaths("C:/git/BERTonSOCRATex_v5/renv/library/R-4.1/x86_64-w64-mingw32")
 library(CohortMethod)
 
-databaseId <- "HIRA_1MFRN_CV19"
-databaseIds <- "HIRA_1MFRN_CV19"
+databaseId <- ""
+databaseIds <- ""
 
 getOutcomesOfInterest <- function() {
   pathToCsv <- system.file("settings", "TcosOfInterest.csv", package = "LTRAvsICS")
