@@ -1,5 +1,6 @@
 library(LTRAvsICS)
 library(CohortMethod)
+library(dplyr)
 
 renv::deactivate()
 
@@ -43,57 +44,162 @@ execute(connectionDetails = connectionDetails,
         databaseId = databaseId,
         databaseName = databaseName,
         databaseDescription = databaseDescription,
-        createCohorts = TRUE,
+        createCohorts = FALSE,
         synthesizePositiveControls = TRUE,
         runAnalyses = TRUE,
         packageResults = TRUE,
         maxCores = maxCores)
 
+if (!file.exists(file.path(outputFolder, "revision")))
+  dir.create(file.path(outputFolder, "revision"), recursive = TRUE)
 
-omr <- readRDS(file.path(outputFolder, "cmOutput", "outcomeModelReference.rds"))
-tcos <- read.csv(system.file("settings", "TcosOfInterest.csv", package = "LTRAvsICS"))
-analysisIdList <- unique(omr$analysisId)
+cmOutput <- file.path(outputFolder, "cmOutput")
+connection <- DatabaseConnector::connect(connectionDetails)
 
-computePreferenceScore <- function (data, unfilteredData = NULL) {
-        
-        if (is.null(unfilteredData)) {
-                proportion <- sum(data$treatment)/nrow(data)
-        }
-        else {
-                proportion <- sum(unfilteredData$treatment)/nrow(unfilteredData)
-        }
-        propensityScore <- data$propensityScore
-        propensityScore[propensityScore > 0.9999999] <- 0.9999999
-        x <- exp(log(propensityScore/(1 - propensityScore)) - log(proportion/(1 - proportion)))
-        data$preferenceScore <- x/(x + 1)
-        return(data)
+om <- readRDS(file.path(cmOutput, "outcomeModelReference.rds"))
+
+omIr <- om %>%
+  as.data.frame() %>%
+  filter(analysisId == 9,
+         targetId == 1205,
+         outcomeId == 989
+  )
+
+cmData <- CohortMethod::loadCohortMethodData(file.path(cmOutput, omIr$cohortMethodDataFile))
+stratPop <- readRDS(file.path(cmOutput, omIr$strataFile))
+stratPop$outcomeStartDate <- as.Date(stratPop$cohortStartDate + stratPop$daysToEvent)
+
+cmDataCohort <- as.data.frame(cmData$cohorts)
+mergedPop <- left_join(stratPop, cmDataCohort[,c("rowId", "personId")], by = "rowId")
+
+#### get outcome concept id ####
+sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "GetOutcomeCounts.sql",
+                                         packageName = "LTRAvsICS",
+                                         dbms = connectionDetails$dbms,
+                                         vocabulary_database_schema = cdmDatabaseSchema,
+                                         cdm_database_schema = cdmDatabaseSchema,
+                                         cohort_database_schema = cohortDatabaseSchema,
+                                         cohort_table = cohortTable,
+                                         target_definition_id = 1205,
+                                         comparator_definition_id = 1207)
+
+outcomes <- DatabaseConnector::querySql(connection, sql)
+colnames(outcomes) <- SqlRender::snakeCaseToCamelCase(colnames(outcomes))
+
+outcomes$personId <- as.numeric(outcomes$personId)
+mergedPop$personId <- as.numeric(mergedPop$personId)
+
+outcomePop <- left_join(mergedPop, outcomes, by = c("personId", "outcomeStartDate"))
+outcomePop <- outcomePop %>% filter(outcomeCount >= 1)
+
+#### Classify composite outcome into secondary outcomes #### 
+outcomeCf <- read.csv("./outcome_classification.csv")
+
+##### get descendant concept #####
+for (i in 1:length(unique(outcomeCf$type))) {
+  
+  outcomeType <- unique(outcomeCf$type)
+  temp <- outcomeCf %>% filter(type == outcomeType[i]) %>% mutate(concept_id = as.numeric(concept_id))
+  assign(outcomeType[i], temp)
+  
+  sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "GetDescendants.sql",
+                                           packageName = "LTRAvsICS",
+                                           dbms = connectionDetails$dbms,
+                                           vocabulary_database_schema = cdmDatabaseSchema,
+                                           ancestor_concept = get(outcomeType[i])[,"concept_id"])
+  
+  temp <- DatabaseConnector::querySql(connection, sql)
+  assign(paste0(outcomeType[i], "concept"), temp)
+  
 }
 
-psResult <- data.frame()
+##### Classify outcomes  and count number of outcomes #####
+outcomePop <- outcomePop %>% mutate(outcomeType = case_when(conceptId %in% psychoticconcept$CONCEPT_ID ~ "psychotic",
+                                                            conceptId %in% moodconcept$CONCEPT_ID ~ "mood",
+                                                            conceptId %in% anxietyconcept$CONCEPT_ID ~ "anxiety",
+                                                            conceptId %in% sleepconcept$CONCEPT_ID ~ "sleep",
+                                                            conceptId %in% cognitiveconcept$CONCEPT_ID ~ "cognitive",
+                                                            conceptId %in% movementconcept$CONCEPT_ID ~ "movement",
+                                                            conceptId %in% personalityconcept$CONCEPT_ID ~ "personality",
+                                                            conceptId %in% otherconcept$CONCEPT_ID ~ "other",
+                                                            TRUE ~ NA_character_))
 
-for (i in 1:nrow(tcos)) {
-        target <- tcos$targetId[i]
-        comparator <- tcos$comparatorId[i]
-        outcome <- tcos$outcomeIds[i]
-        
-        for (j in analysisIdList) {
-                
-                psFile <- omr %>% filter(targetId == target & comparatorId == comparator & outcomeId == outcome & analysisId == j)
-                ps <- readRDS(file.path(outputFolder, "cmOutput", psFile$psFile))
-                ps <- computePreferenceScore(ps)
-                auc <- CohortMethod::computePsAuc(ps)
-                equipoise <- mean(ps$preferenceScore >= 0.3 & ps$preferenceScore <= 0.7)
-                
-                temp <- data.frame(targetId = target,
-                                   comparatorId = comparator,
-                                   outcomeId = outcome,
-                                   analysisId = j,
-                                   auc = auc,
-                                   equipoise = equipoise)
-                
-                psResult <- rbind(psResult, temp)
-        }
-        
-}
+outcomePop <- outcomePop %>% group_by(stratumId, treatment, outcomeType) %>% summarize(numOfEvents = n())
 
-write.csv(psResult, file.path(outputFolder, "export", "psResult.csv"), row.names = F)
+#### Calculate weighted average IR ####
+##### Calculate weight #####
+stratPop$stratumSizeT <- 1 
+strataSizesT <- aggregate(stratumSizeT ~ stratumId, stratPop[stratPop$treatment==1,], sum)
+strataSizesC <- aggregate(stratumSizeT ~ stratumId, stratPop[stratPop$treatment==0,], sum)
+
+colnames(strataSizesC)[2] <- "stratumSizeC"
+weights <- merge(strataSizesT, strataSizesC)
+
+weights$weight <- weights$stratumSizeT / weights$stratumSizeC
+outcomePop <- merge(outcomePop, weights[, c("stratumId", "weight")], by = "stratumId")
+outcomePop$weight[outcomePop$treatment == 1] <- 1
+
+personYears <- mergedPop %>% group_by(stratumId, treatment) %>% summarise(survivalTime = sum(survivalTime))
+outcomePop <- merge(outcomePop, personYears, by = c("stratumId", "treatment"))
+
+##### Calculate IR for secondary outcomes #####
+ir_tab <- outcomePop %>% 
+  group_by(treatment, outcomeType) %>%
+  summarise(events = sum(numOfEvents * weight),
+            py = sum(survivalTime * weight),
+            IR = events/py * 1000)
+##### Calculate IR for primary outcome #####
+ir_full <- mergedPop %>% mutate(outcomeYN = ifelse(outcomeCount >= 1, 1, 0)) %>% group_by(stratumId, treatment) %>%
+  summarise(events = sum(outcomeYN),
+            survivalTime = sum(survivalTime))
+
+ir_full <- merge(ir_full, weights[, c("stratumId", "weight")], by = "stratumId")
+ir_full$weight[ir_full$treatment == 1] <- 1
+
+ir_full <- ir_full %>% 
+  group_by(treatment) %>%
+  summarise(events = sum(events * weight),
+            py = sum(survivalTime * weight),
+            IR = events/py * 1000)
+
+ir_full$outcomeType <- "full"
+##### Final #####
+ir_final <- rbind(ir_full, ir_tab)
+write.csv(ir_final, file.path(outputFolder, "revision", "outcome_distribution.csv"), row.names = F)
+
+#### Attrition table befor study population ####
+##### ICS #####
+sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "ICS_HIRA_attrition.sql",
+                                         packageName = "LTRAvsICS",
+                                         dbms = connectionDetails$dbms,
+                                         vocabulary_database_schema = cdmDatabaseSchema,
+                                         cdm_database_schema = cdmDatabaseSchema)
+
+temp <- DatabaseConnector::querySql(connection, sql)
+
+ics_attrition <- temp %>% distinct(PERSON_ID, .keep_all = T) %>% 
+  summarise(qualified = n(),
+            stage0 = sum(INCLUSION_STAGE_0==0, na.rm = T),
+            stage1 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1, na.rm = T),
+            stage2 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1 & INCLUSION_STAGE_2 == 2, na.rm = T)) %>%
+  mutate(cohort = "ICS")
+
+##### LTRA #####
+sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "LTRA_HIRA_attrition.sql",
+                                         packageName = "LTRAvsICS",
+                                         dbms = connectionDetails$dbms,
+                                         vocabulary_database_schema = cdmDatabaseSchema,
+                                         cdm_database_schema = cdmDatabaseSchema)
+
+temp <- DatabaseConnector::querySql(connection, sql)
+
+ltra_attrition <- temp %>% distinct(PERSON_ID, .keep_all = T) %>% 
+  summarise(qualified = n(),
+            stage0 = sum(INCLUSION_STAGE_0==0, na.rm = T),
+            stage1 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1, na.rm = T),
+            stage2 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1 & INCLUSION_STAGE_2 == 2, na.rm = T)) %>%
+  mutate(cohort = "LTRA")
+
+##### Final #####
+attrition_final <- rbind(ics_attrition, ltra_attrition)
+write.csv(attrition_final, file.path(outputFolder, "revision", "attrition_before_studyPop.csv"), row.names = F)

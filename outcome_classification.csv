@@ -1,0 +1,81 @@
+concept_id,concept_code,concept_name,domain,type
+4219484,82313006,Suicide attempt,Observation,mood
+440925,44301001,Suicide,Observation,mood
+4303690,418420002,Intentionally harming self,Observation,mood
+4172646,42112009,Urinary incontinence of non-organic origin,Condition,other
+443782,26079004,Tremor,Condition,movement
+4231241,407374003,Transsexual,Condition,personality
+374907,192848006,Tics of organic origin,Condition,movement
+381839,568005,Tic disorder,Condition,movement
+4273391,6471006,Suicidal thoughts,Condition,mood
+444362,86849004,Suicidal deliberate poisoning,Condition,mood
+436667,39423001,Stuttering,Condition,cognitive
+4152371,271952001,Stress and adjustment reaction,Condition,anxiety
+4207660,5507002,Stereotypy habit disorder,Condition,personality
+435784,31297008,Somatoform disorder,Condition,anxiety
+435524,39898005,Sleep disorder,Condition,sleep
+35623653,766068002,Sexual relationship problem,Condition,personality
+4181216,363293009,Self-administered poisoning,Condition,mood
+439235,276853009,Self inflicted injury,Condition,mood
+434010,31027006,Schizotypal personality disorder,Condition,personality
+435783,58214004,Schizophrenia,Condition,psychotic
+4286201,68890003,Schizoaffective disorder,Condition,psychotic
+4198081,51921000,Retrograde amnesia,Condition,cognitive
+4168212,274647009,Restlessness and agitation,Condition,anxiety
+4098302,191616006,Recurrent depression,Condition,mood
+4100683,192631000,Pica of infancy and childhood,Condition,cognitive
+4085332,248004009,Physical aggression,Condition,personality
+4304010,386810004,Phobic disorder,Condition,anxiety
+441838,33449004,Personality disorder,Condition,personality
+4335168,231487004,Persistent delusional disorder,Condition,psychotic
+4173740,50299009,Paraphilia,Condition,personality
+44782778,3.81E+11,Pain disorder with psychological factor,Condition,anxiety
+4100247,191447007,Organic psychotic condition,Condition,psychotic
+373175,45912004,Organic hallucinosis,Condition,psychotic
+4335159,231442003,Organic catatonic disorder,Condition,movement
+440374,191736004,Obsessive-compulsive disorder,Condition,anxiety
+374905,270487001,Non-organic sleep disorder,Condition,sleep
+4101149,191525009,Non-organic psychosis,Condition,psychotic
+4105190,192496000,Non-organic enduring personality change,Condition,personality
+4170260,419145002,Nightmares,Condition,sleep
+444243,111475002,Neurosis,Condition,anxiety
+441553,17450006,Myoclonus,Condition,movement
+444100,46206005,Mood disorder,Condition,mood
+4297400,386805003,Mild cognitive disorder,Condition,cognitive
+4130710,26453000,Mental disorder in adolescence,Condition,personality
+4151937,31430005,Medication-induced postural tremor,Condition,movement
+4333677,231494001,Mania,Condition,mood
+4168681,274646000,Irritability and anger,Condition,personality
+436952,61831009,Induced psychotic disorder,Condition,psychotic
+433752,66347000,Impulse control disorder,Condition,personality
+4195585,79351003,Hostile behavior,Condition,personality
+433031,7011001,Hallucinations,Condition,psychotic
+436381,5095008,Gender identity disorder of childhood,Condition,personality
+4338512,87991007,Gender identity disorder,Condition,personality
+4313860,86571001,Finding related to maturity of sexuality,Condition,personality
+436817,424196004,Feeling nervous,Condition,anxiety
+4250314,74142004,Feeding disorder of infancy OR early childhood,Condition,cognitive
+440984,50705009,Factitious disorder,Condition,personality
+440695,302690004,Encopresis,Condition,cognitive
+4217365,71959007,Elective mutism,Condition,personality
+434903,52813007,Ego-dystonic sexual orientation,Observation,personality
+375800,15802004,Dystonia,Condition,movement
+43021205,472989003,Dual-role transvestism,Condition,personality
+4044055,230304003,Drug-induced chorea,Condition,movement
+434889,44376007,Dissociative disorder,Condition,anxiety
+4268911,62476001,Disorientated,Condition,psychotic
+4047120,229712006,Disorders of attention and motor control,Condition,cognitive
+440383,35489007,Depressive disorder,Condition,mood
+432590,48500005,Delusional disorder,Condition,psychotic
+4294887,37732008,Cluttering,Condition,cognitive
+440990,271700006,Chorea,Condition,movement
+4100101,192616009,Childhood or adolescent disorder of social functioning,Condition,personality
+436665,13746004,Bipolar disorder,Condition,mood
+438409,406506008,Attention deficit hyperactivity disorder,Condition,cognitive
+442077,197480006,Anxiety disorder,Condition,anxiety
+4229448,88822006,Anterograde amnesia,Condition,cognitive
+436677,17226007,Adjustment disorder,Condition,anxiety
+4335169,231489001,Acute transient psychotic disorder,Condition,psychotic
+4133495,278853003,Acute schizophrenia-like psychotic disorder,Condition,psychotic
+37016719,712824002,Acute polymorphic psychotic disorder without symptoms of schizophrenia,Condition,psychotic
+37016741,712850003,Acute polymorphic psychotic disorder co-occurrent with symptoms of schizophrenia,Condition,psychotic
