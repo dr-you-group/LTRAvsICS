@@ -60,7 +60,7 @@ om <- readRDS(file.path(cmOutput, "outcomeModelReference.rds"))
 
 omIr <- om %>%
   as.data.frame() %>%
-  filter(analysisId == 9,
+  filter(analysisId == 3,
          targetId == 1205,
          outcomeId == 989
   )
