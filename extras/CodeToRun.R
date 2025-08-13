@@ -35,20 +35,20 @@ databaseDescription <- "HIRA"
 # For Oracle: define a schema that can be used to emulate temp tables:
 oracleTempSchema <- NULL
 
-execute(connectionDetails = connectionDetails,
-        cdmDatabaseSchema = cdmDatabaseSchema,
-        cohortDatabaseSchema = cohortDatabaseSchema,
-        cohortTable = cohortTable,
-        oracleTempSchema = oracleTempSchema,
-        outputFolder = outputFolder,
-        databaseId = databaseId,
-        databaseName = databaseName,
-        databaseDescription = databaseDescription,
-        createCohorts = FALSE,
-        synthesizePositiveControls = TRUE,
-        runAnalyses = TRUE,
-        packageResults = TRUE,
-        maxCores = maxCores)
+# execute(connectionDetails = connectionDetails,
+#         cdmDatabaseSchema = cdmDatabaseSchema,
+#         cohortDatabaseSchema = cohortDatabaseSchema,
+#         cohortTable = cohortTable,
+#         oracleTempSchema = oracleTempSchema,
+#         outputFolder = outputFolder,
+#         databaseId = databaseId,
+#         databaseName = databaseName,
+#         databaseDescription = databaseDescription,
+#         createCohorts = FALSE,
+#         synthesizePositiveControls = TRUE,
+#         runAnalyses = TRUE,
+#         packageResults = TRUE,
+#         maxCores = maxCores)
 
 if (!file.exists(file.path(outputFolder, "revision")))
   dir.create(file.path(outputFolder, "revision"), recursive = TRUE)
@@ -145,9 +145,9 @@ outcomePop <- merge(outcomePop, personYears, by = c("stratumId", "treatment"))
 ##### Calculate IR for secondary outcomes #####
 ir_tab <- outcomePop %>% 
   group_by(treatment, outcomeType) %>%
-  summarise(events = sum(numOfEvents * weight),
-            py = sum(survivalTime * weight),
-            IR = events/py * 1000)
+  summarise(events = sum(numOfEvents),
+            py = sum(survivalTime),
+            IR = events/py * 1000 * 365.25)
 ##### Calculate IR for primary outcome #####
 ir_full <- mergedPop %>% mutate(outcomeYN = ifelse(outcomeCount >= 1, 1, 0)) %>% group_by(stratumId, treatment) %>%
   summarise(events = sum(outcomeYN),
@@ -158,48 +158,48 @@ ir_full$weight[ir_full$treatment == 1] <- 1
 
 ir_full <- ir_full %>% 
   group_by(treatment) %>%
-  summarise(events = sum(events * weight),
-            py = sum(survivalTime * weight),
-            IR = events/py * 1000)
+  summarise(events = sum(events),
+            py = sum(survivalTime),
+            IR = events/py * 1000 * 365.25)
 
 ir_full$outcomeType <- "full"
 ##### Final #####
 ir_final <- rbind(ir_full, ir_tab)
-write.csv(ir_final, file.path(outputFolder, "revision", "outcome_distribution.csv"), row.names = F)
+write.csv(ir_final, file.path(outputFolder, "revision", "outcome_distribution_crude.csv"), row.names = F)
 
 #### Attrition table befor study population ####
 ##### ICS #####
-sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "ICS_HIRA_attrition.sql",
-                                         packageName = "LTRAvsICS",
-                                         dbms = connectionDetails$dbms,
-                                         vocabulary_database_schema = cdmDatabaseSchema,
-                                         cdm_database_schema = cdmDatabaseSchema)
+# sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "ICS_HIRA_attrition.sql",
+#                                          packageName = "LTRAvsICS",
+#                                          dbms = connectionDetails$dbms,
+#                                          vocabulary_database_schema = cdmDatabaseSchema,
+#                                          cdm_database_schema = cdmDatabaseSchema)
 
-temp <- DatabaseConnector::querySql(connection, sql)
+# temp <- DatabaseConnector::querySql(connection, sql)
 
-ics_attrition <- temp %>% distinct(PERSON_ID, .keep_all = T) %>% 
-  summarise(qualified = n(),
-            stage0 = sum(INCLUSION_STAGE_0==0, na.rm = T),
-            stage1 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1, na.rm = T),
-            stage2 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1 & INCLUSION_STAGE_2 == 2, na.rm = T)) %>%
-  mutate(cohort = "ICS")
+# ics_attrition <- temp %>% distinct(PERSON_ID, .keep_all = T) %>% 
+#   summarise(qualified = n(),
+#             stage0 = sum(INCLUSION_STAGE_0==0, na.rm = T),
+#             stage1 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1, na.rm = T),
+#             stage2 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1 & INCLUSION_STAGE_2 == 2, na.rm = T)) %>%
+#   mutate(cohort = "ICS")
 
-##### LTRA #####
-sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "LTRA_HIRA_attrition.sql",
-                                         packageName = "LTRAvsICS",
-                                         dbms = connectionDetails$dbms,
-                                         vocabulary_database_schema = cdmDatabaseSchema,
-                                         cdm_database_schema = cdmDatabaseSchema)
+# ##### LTRA #####
+# sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "LTRA_HIRA_attrition.sql",
+#                                          packageName = "LTRAvsICS",
+#                                          dbms = connectionDetails$dbms,
+#                                          vocabulary_database_schema = cdmDatabaseSchema,
+#                                          cdm_database_schema = cdmDatabaseSchema)
 
-temp <- DatabaseConnector::querySql(connection, sql)
+# temp <- DatabaseConnector::querySql(connection, sql)
 
-ltra_attrition <- temp %>% distinct(PERSON_ID, .keep_all = T) %>% 
-  summarise(qualified = n(),
-            stage0 = sum(INCLUSION_STAGE_0==0, na.rm = T),
-            stage1 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1, na.rm = T),
-            stage2 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1 & INCLUSION_STAGE_2 == 2, na.rm = T)) %>%
-  mutate(cohort = "LTRA")
+# ltra_attrition <- temp %>% distinct(PERSON_ID, .keep_all = T) %>% 
+#   summarise(qualified = n(),
+#             stage0 = sum(INCLUSION_STAGE_0==0, na.rm = T),
+#             stage1 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1, na.rm = T),
+#             stage2 = sum(INCLUSION_STAGE_0==0 & INCLUSION_STAGE_1 == 1 & INCLUSION_STAGE_2 == 2, na.rm = T)) %>%
+#   mutate(cohort = "LTRA")
 
-##### Final #####
-attrition_final <- rbind(ics_attrition, ltra_attrition)
-write.csv(attrition_final, file.path(outputFolder, "revision", "attrition_before_studyPop.csv"), row.names = F)
+# ##### Final #####
+# attrition_final <- rbind(ics_attrition, ltra_attrition)
+# write.csv(attrition_final, file.path(outputFolder, "revision", "attrition_before_studyPop.csv"), row.names = F)
